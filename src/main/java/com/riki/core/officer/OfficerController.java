@@ -17,7 +17,7 @@ public class OfficerController {
         return officerService.findAll();
     }
 
-    @GetMapping
+    @GetMapping("/{id}")
     public Officer findById(@PathVariable("id")UUID id){
         return officerService.findById(id);
     }
